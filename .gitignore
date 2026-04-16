@@ -1,0 +1,10 @@
+# Entornos virtuales de Python
+# Ignora el directorio de tu entorno virtual específico y otros comunes.
+metal_engine/
+venv/
+
+# Archivos de caché de Python
+__pycache__/
+
+# Archivos de caché de Pytest
+.pytest_cache/
