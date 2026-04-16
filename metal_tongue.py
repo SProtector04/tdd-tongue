@@ -10,10 +10,9 @@ class Personaje:
             objetivo.hp = 0
             objetivo.esta_vivo = False
     def curar(self, objetivo, cura):
+        if not objetivo.esta_vivo:
+            return  # Regla: Los muertos no se curan
         objetivo.hp += cura
         if objetivo.hp > 1000:
             objetivo.hp = 1000  # Regla: Límite de HP máximo
-
-        if not objetivo.esta_vivo:
-            return  # Regla: Los muertos no se curan
 
