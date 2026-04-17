@@ -16,4 +16,9 @@ class Personaje:
         objetivo.hp += cura
         if objetivo.hp > 1000:
             objetivo.hp = 1000  # Regla: Límite de HP máximo
-
+            
+    def move(self, x, y):
+        self.position = (x, y)
+    
+    def say(self, mensaje):
+        return mensaje

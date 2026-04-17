@@ -60,3 +60,14 @@ def test_position():
     heroe = Personaje()
     
     assert heroe.position == (0, 0)
+    
+def test_move():
+    heroe = Personaje()
+    test_position()
+    heroe.move(2,3)
+    assert heroe.position == (2, 3)
+    
+def test_talk():
+    heroe = Personaje()
+    
+    assert heroe.say("Hola") == "Hola"
