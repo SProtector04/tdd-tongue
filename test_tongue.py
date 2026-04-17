@@ -55,3 +55,8 @@ def test_los_muertos_no_se_curan():
     
     assert heroe.hp == 0 #Sigue muerto
     assert heroe.esta_vivo == False #Bien muerto
+
+def test_position():
+    heroe = Personaje()
+    
+    assert heroe.position == (0, 0)
